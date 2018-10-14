@@ -5,7 +5,7 @@ Basic flashcard application. Version 1.0 contains only one question and answer w
 
 ### App Walk-though
 
-<img src="http://recordit.co/fvKp7MZLhX" width=200><br>
+<img src="http://recordit.co/fvKp7MZLhX" width=200><br>http://recordit.co/fvKp7MZLhX<br>
 
 ## Required
 - [x] Create New Project in Xcode
