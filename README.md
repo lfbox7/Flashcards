@@ -1,4 +1,4 @@
-## NAME_OF_YOUR_APP_HERE
+## Flashcards
 
 ### App Description
 Basic flashcard application. Version 1.0 contains only one question and answer with only one flip possible.
