@@ -18,9 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pVD-wo-RCf">
-                                <rect key="frame" x="57" y="274" width="260" height="119"/>
+                                <rect key="frame" x="57" y="177" width="260" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sorry, try again!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-3V-fp1">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="119"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brasília" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rub-A5-jH2">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="119"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -44,13 +52,64 @@
                                     <outletCollection property="gestureRecognizers" destination="GLK-GU-LGy" appends="YES" id="ENK-Bb-0ly"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ht-WP-bPA">
+                                <rect key="frame" x="37" y="352" width="300" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plP-00-i5q">
+                                        <rect key="frame" x="20" y="20" width="260" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="São Paulo">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOptionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DMK-L5-DdP"/>
+                                            <outletCollection property="gestureRecognizers" destination="GLK-GU-LGy" appends="YES" id="taK-fg-LpM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGV-N5-hEJ">
+                                        <rect key="frame" x="20" y="77" width="260" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Rio de Janeiro">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOptionTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4m-08-OKj"/>
+                                            <outletCollection property="gestureRecognizers" destination="GLK-GU-LGy" appends="YES" id="h6L-nN-cqQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqS-j1-abD">
+                                        <rect key="frame" x="20" y="140" width="260" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Brasília">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOptionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbE-eG-KXa"/>
+                                            <outletCollection property="gestureRecognizers" destination="GLK-GU-LGy" appends="YES" id="CIG-Yl-DSr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GLK-GU-LGy" appends="YES" id="7F6-6E-Bmp"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="backLabel" destination="rub-A5-jH2" id="WPj-TD-imC"/>
+                        <outlet property="btnOptionOne" destination="plP-00-i5q" id="tJz-rE-qUU"/>
+                        <outlet property="btnOptionThree" destination="gqS-j1-abD" id="0On-HV-TZg"/>
+                        <outlet property="btnOptionTwo" destination="TGV-N5-hEJ" id="Qiy-pr-jQI"/>
                         <outlet property="frontLabel" destination="r4j-SX-cHM" id="6KR-rO-65P"/>
+                        <outlet property="middleLabel" destination="mYl-3V-fp1" id="2y8-f2-Ghr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
