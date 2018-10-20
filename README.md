@@ -5,7 +5,7 @@ Basic flashcard application. Version 1.0 contains only one question and answer w
 
 ### App Walk-though
 
-<img src="http://recordit.co/fvKp7MZLhX.gif" width=200><br>http://recordit.co/fvKp7MZLhX<br>
+<img src="http://recordit.co/qTsHqBAZEv.gif" width=200><br>http://recordit.co/qTsHqBAZEv<br>
 
 ## Required
 - [x] Create New Project in Xcode
@@ -14,6 +14,6 @@ Basic flashcard application. Version 1.0 contains only one question and answer w
 - [x] Build in logic to show the answer side when the card is tapped
 - [x] Push code to GitHub
 ## Optional
-- [ ] Toggle the flashcard between the question side and the answer side
-- [ ] Style the question and answer side of the card to better distinguish between the two sides
-- [ ] Add selectable multiple choice answers beneath the card
+- [x] Toggle the flashcard between the question side and the answer side
+- [x] Style the question and answer side of the card to better distinguish between the two sides
+- [x] Add selectable multiple choice answers beneath the card
