@@ -30,8 +30,6 @@ class ViewController: UIViewController {
             // styling question label
         frontLabel.clipsToBounds = true
         frontLabel.layer.cornerRadius = 15
-        frontLabel.layer.shadowRadius = 15
-        frontLabel.layer.shadowOpacity = 0.3
         
             // styling wrong answer label
         middleLabel.clipsToBounds = true
@@ -70,6 +68,16 @@ class ViewController: UIViewController {
         }
     }
     
+    func updateFlashcards(question: String, answer: String) {
+        
+        frontLabel.text = question
+        
+        // get the text in the answer text field
+        backLabel.text = answer
+        
+    }
+    
+    /*
     @IBAction func btnOptionOne(_ sender: Any) {
             // hide and show correct label
         backLabel.isHidden=true
@@ -100,6 +108,17 @@ class ViewController: UIViewController {
         frontLabel.isHidden=true
         middleLabel.isHidden=true
         // function to move to next question
+     } */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // destination of the segue is the Navigation Controller
+        let navigationController = segue.destination as! UINavigationController
+        
+        // Navigation Controller only contains a Creation View Controller
+        let creationController = navigationController.topViewController as! CreationViewController
+        
+        // set the flashcardsController property to self
+        creationController.flashcardsController = self
     }
 }
 
