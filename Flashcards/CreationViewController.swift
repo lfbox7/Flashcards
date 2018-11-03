@@ -13,11 +13,17 @@ class CreationViewController: UIViewController {
     var flashcardsController: ViewController!
     @IBOutlet weak var questionTextField: UITextField!
     @IBOutlet weak var answerTextField: UITextField!
+    var initialQuestion: String?
+    var initialAnswer: String?
+    @IBOutlet weak var answerOptOne: UITextField!
+    @IBOutlet weak var answerOptTwo: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+            // Do any additional setup after loading the view
+        questionTextField.text = initialQuestion
+        answerTextField.text = initialAnswer
     }
 
     @IBAction func didTapOnCancel(_ sender: Any) {
@@ -25,16 +31,28 @@ class CreationViewController: UIViewController {
     }
     
      @IBAction func didTapOnDone(_ sender: Any) {
-        // get the text in the question text field
+            // get the text in text fields
         let questionText = questionTextField.text
-        
-        // get the text in the answer text field
         let answerText = answerTextField.text
+        let answerOne = answerOptOne.text
+        let answerTwo = answerOptTwo.text
         
-        // call the function to update the flashcard
-        flashcardsController.updateFlashcards(question: questionText!, answer: answerText!)
+            // check if text boxes are empty
+        if questionText == nil || answerText == nil || questionText!.isEmpty || answerText!.isEmpty {
+            
+                // show error
+            let alert = UIAlertController (title: "Missing Text", message: "You need to enter both a question and an answer", preferredStyle: UIAlertController.Style.alert)
+            present(alert, animated: true)
+            let okAction = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(okAction)
+        } else {
+            
+        }
         
-        // dismiss
+            // call the function to update the flashcard
+        flashcardsController.updateFlashcards(question: questionText!, answer: answerText!, extraAnswerOne: answerOne!, extraAnswerTwo: answerTwo!)
+        
+            // dismiss
         dismiss(animated: true)
      }
     /*
