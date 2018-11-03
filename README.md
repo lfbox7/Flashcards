@@ -9,7 +9,7 @@ Basic flashcard application.
 
 ### App Walk-though
 
-<img src="http://recordit.co/WPzpind4qL.gif" width=200><br>http://recordit.co/WPzpind4qL<br>
+<img src="http://recordit.co/QT7aWTfwbn.gif" width=200><br>http://recordit.co/QT7aWTfwbn<br>
 
 ## Required
 - [x] User can open the creation screen
