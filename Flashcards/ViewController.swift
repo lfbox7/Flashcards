@@ -148,7 +148,16 @@ class ViewController: UIViewController {
         backLabel.isHidden=false
         frontLabel.isHidden=true
         middleLabel.isHidden=true
-        // function to move to next question
+ 
+            // hide and show question label after 1sec
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.frontLabel.isHidden = false
+            self.middleLabel.isHidden = true
+            if self.currentIndex == self.flashcards.count - 1 {
+            } else {
+                self.didTapOnNext(self)
+            }
+        }
     }
 
     func updateLabels() {
