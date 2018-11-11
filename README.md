@@ -10,7 +10,7 @@ Basic flashcard application.
 
 ### App Walk-though
 
-<img src="http://recordit.co/QT7aWTfwbn.gif" width=200><br>http://recordit.co/QT7aWTfwbn<br>
+<img src="http://recordit.co/SaEIDLTfDA.gif" width=200><br>http://recordit.co/SaEIDLTfDA<br>
 
 ## Required
 - [x] User can browse through multiple flashcards
